@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { CssBaseline, Stack, Box, ThemeProvider } from "@mui/material";
 import theme from "./theme";
-import Search from "./components/search";
+import Search from "./components/Search";
 import Header from "./components/Header";
 
 function App() {
