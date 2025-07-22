@@ -104,7 +104,7 @@ const Search = () => {
             </Button>
           </ButtonGroup>
 
-          <Typography sx={{ color: "#fff" }}>
+          <Typography sx={{ color: "#fff", paddingTop: 1 }}>
             Claim Weight: {claimWeight === 0 ? "" : claimWeight}0% | Description
             Weight: {claimWeight === 10 ? "" : 10 - claimWeight}0%
           </Typography>
