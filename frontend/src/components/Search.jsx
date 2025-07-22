@@ -77,8 +77,8 @@ const Search = () => {
           color: "#ffffff",
           borderColor: showSettings ? "transparent" : "#2c2c2c",
           "&:hover": {
-            backgroundColor: "#212121",
-            borderColor: showSettings ? "transparent" : "#1a1a1a",
+            backgroundColor: showSettings ? "#212121" : "transparent",
+            borderColor: showSettings ? "transparent" : "#454545ff",
           },
         }}
       >
