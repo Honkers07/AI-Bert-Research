@@ -1,98 +1,12 @@
-```markdown
-# Patent Similarity Search for Quantum Photonic Circuits
+# React + Vite
 
-This application helps researchers and inventors explore related patents in the field of **Quantum Photonic Circuits** using **vector similarity search** on BERT-based embeddings. Users input a patent **title**, **claim**, and **description**, and the app returns the most relevant patents ranked by similarity.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Built using:
-- **Sentence-BERT** (`PatentSBERTa`)
-- **FAISS** for vector search
-- **FastAPI** backend
-- **React + MUI** frontend
+Currently, two official plugins are available:
 
----
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Features
+## Expanding the ESLint configuration
 
-- Combine **claim** and **description** vectors with adjustable **weights**
-- Choose between **cosine** or **euclidean** similarity
-- Dynamically select the **number of top results** to return
-- Clean, responsive UI with interactive sliders and controls
-
----
-
-## Setup Instructions
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/AI-Bert-Research.git
-cd AI-Bert-Research
-```
-
----
-
-### 2. Backend Setup
-
-```bash
-cd backend
-pip install -r requirements.txt
-uvicorn main:app --reload
-```
-
-Make sure the following files are in the `backend/data/` folder:
-
-- `index_claim_cosine.faiss`
-- `index_claim_euclidean.faiss`
-- `index_desc_cosine.faiss`
-- `index_desc_euclidean.faiss`
-- `patent_metadata.json`
-
----
-
-### 3. Frontend Setup
-
-In a new terminal tab/window:
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-This will start the React frontend on `localhost:3000`.
-
----
-
-## Usage
-
-1. Enter a **title**, **claim**, and/or **description** in the input fields.
-2. Use the sliders to adjust:
-   - Claim vs. Description Weight
-   - Similarity Mode: Cosine or Euclidean
-   - Number of Similar Patents to Return
-3. Click **Search**.
-4. View dynamically ranked patent results based on your settings.
-
----
-
-## Requirements
-
-- **Python** ≥ 3.9
-- **Node.js** ≥ 16
-- Required Python packages (see `backend/requirements.txt`):
-  - `fastapi`
-  - `uvicorn`
-  - `faiss-cpu`
-  - `sentence-transformers`
-  - `numpy`
-- Required JS packages (installed via `npm install` in frontend)
-
----
-
-## Notes
-
-- This app is designed to run **locally** and does not require cloud APIs.
-- You must generate the FAISS indices and metadata beforehand.
-- FAISS indices assume **cosine** similarity by default unless configured otherwise.
-
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
