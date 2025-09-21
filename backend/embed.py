@@ -12,8 +12,8 @@ MODEL_NAME = "AI-Growth-Lab/PatentSBERTa"
 MAX_TOKENS = 512
 BATCH_SIZE = 16
 
-DESCRIPTION_FILE = r"C:\\Users\\erico\\Downloads\\descriptions_matched.jsonl"
-CLAIM_FILE = r"C:\\Users\\erico\\Downloads\\claims_matched.jsonl"
+DESCRIPTION_FILE = r"C:\Users\wilbe\OneDrive\Desktop\Filtered Patents\descriptions_matched.jsonl"
+CLAIM_FILE = r"C:\Users\wilbe\OneDrive\Desktop\Filtered Patents\claims_matched.jsonl"
 
 # === OUTPUT DIRECTORY ===
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))

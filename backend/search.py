@@ -8,11 +8,12 @@ print("📦 Loading model...")
 model = SentenceTransformer("AI-Growth-Lab/PatentSBERTa")
 
 print("📂 Loading FAISS indices...")
-claim_index = faiss.read_index("data/index_claim_cosine.faiss")
-desc_index = faiss.read_index("data/index_desc_cosine.faiss")
+claim_index = faiss.read_index("data/index_claim_cosine.faiss") # This line
+desc_index = faiss.read_index("data/index_desc_cosine.faiss")   # This line
 
-with open("data/patent_metadata.json", "r", encoding="utf-8") as f:
+with open("data/patent_metadata.json", "r", encoding="utf-8") as f: # And this line
     metadata = json.load(f)
+# ...
 
 claim_metadata = [m for m in metadata if m["section"] == "claim"]
 desc_metadata = [m for m in metadata if m["section"] == "description"]
