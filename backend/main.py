@@ -21,7 +21,7 @@ class SearchRequest(BaseModel):
     claimWeight: float  # 0.1 - 1.0
     topK: int  # e.g., 5, 10, 15
 
-@app.post("/search")
+@app.post("/search")        
 async def search(req: SearchRequest):
     results = search_patents(
         req.query_title,

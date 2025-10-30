@@ -147,7 +147,7 @@ const Search = () => {
               <Typography variant="body2">
                 Publication #: {publication_number}
               </Typography>
-              <Typography variant="body2">Date: {date}</Typography>
+              {/* <Typography variant="body2">Date: {date}</Typography>*/}
               <Typography variant="body2">Score: {score.toFixed(4)}</Typography>
             </CardContent>
           </Card>
